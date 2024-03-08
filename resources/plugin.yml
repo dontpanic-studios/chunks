@@ -1,0 +1,13 @@
+name: Chunks
+version: '${project.version}'
+main: std.standard.chunks.Chunks
+api-version: '1.20'
+prefix: Chunks
+load: STARTUP
+description: Manage your chunks individually
+website: https://studio.dontpanic.kro.kr
+
+commands:
+  save:
+    usage: /<command>
+    description: Save chunk to yml
