@@ -8,6 +8,6 @@ description: Manage your chunks individually
 website: https://studio.dontpanic.kro.kr
 
 commands:
-  save:
-    usage: /<command>
-    description: Save chunk to yml
+  chunks:
+    usage: /<command> (set/reset)
+    description: Config chunk
