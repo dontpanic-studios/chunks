@@ -30,9 +30,9 @@ public class ChunkConfigurator implements CommandExecutor {
                 if(Enums.getIfPresent(Settings.class, arg).isPresent()) {
                     try {
                         if (args[2].equalsIgnoreCase("true")) {
-                            Chunks.plugin.getChunkData().set(p.getChunk().getChunkKey() + ".configs." + arg, true);
+                            Chunks.plugin.getChunkData().set(p.getChunk().getChunkKey() + ".configs." + arg, 1);
                         } else {
-                            Chunks.plugin.getChunkData().set(p.getChunk().getChunkKey() + ".configs." + arg, false);
+                            Chunks.plugin.getChunkData().set(p.getChunk().getChunkKey() + ".configs." + arg, 0);
                         }
                         p.sendMessage(ChatColor.COLOR_CHAR + new Language().DeSeriallizer(LanguageEnum.TEXT_CHUNK_SETTING_CHANGED));
                         p.sendMessage(ChatColor.COLOR_CHAR + new Language().DeSeriallizer(LanguageEnum.TEXT_CHUNK_NEED_SAVE));

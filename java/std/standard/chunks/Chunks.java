@@ -8,6 +8,8 @@ import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 import std.standard.chunks.command.ChunkConfigurator;
 import std.standard.chunks.command.ChunksConfiguratorSubCommand;
+import std.standard.chunks.events.*;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.Objects;
@@ -31,6 +33,12 @@ public final class Chunks extends JavaPlugin {
         createPlayerDataYml();
         Objects.requireNonNull(getCommand("chunks")).setExecutor(new ChunkConfigurator());
         Objects.requireNonNull(getCommand("chunks")).setTabCompleter(new ChunksConfiguratorSubCommand());
+
+        getServer().getPluginManager().registerEvents(new InteractionEntity(), this);
+        getServer().getPluginManager().registerEvents(new PistonHeadMove(), this);
+        getServer().getPluginManager().registerEvents(new InteractionChest(), this);
+        getServer().getPluginManager().registerEvents(new InteractionPlants(), this);
+        getServer().getPluginManager().registerEvents(new PlayerShiftShowCropTime(), this);
     }
 
     @Override
