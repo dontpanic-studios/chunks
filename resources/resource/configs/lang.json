@@ -21,6 +21,8 @@
   "en_US_TEXT_CHUNK_NEED_SAVE": "eCurrent chunk needs save.",
   "en_US_TEXT_UNDEFINED_SETTING": "cTried to change undefined settings! Ignoring.",
   "en_US_TEXT_INVALID_COMMAND": "eInvalid Command.",
+  "en_US_TEXT_CROP_FULL_GROWN": "eFull grown.",
+  "en_US_TEXT_CROP_AGE_LEFT": "7Age left: ",
   "ko_KR_TEXT_CHUNK_INVALID": "c현재 있는 청크는 알수없는 청크이거나, 고장난 청크입니다.",
   "ko_KR_TEXT_INVALID_COMMAND": "e존재하지 않는 명령어입니다.",
   "ko_KR_TEXT_CHUNK_SAVED": "a청크를 저장하였습니다.",
@@ -37,5 +39,7 @@
   "ko_KR_TEXT_CHUNK_NEED_RESET": "c고장난 청크입니다! 초기화를 하여 수리하세요.",
   "ko_KR_TEXT_UNDEFINED_SETTING": "c알수 없는 설정입니다.",
   "ko_KR_TEXT_CHUNK_SETTING_RESETED": "a청크가 초기화되었습니다!",
-  "ko_KR_TEXT_CONFIRM_RESET": "eReset 다음에 confirm 을 쳐서 진행하세요."
+  "ko_KR_TEXT_CONFIRM_RESET": "eReset 다음에 confirm 을 쳐서 진행하세요.",
+  "ko_KR_TEXT_CROP_FULL_GROWN": "e작물이 다 자람",
+  "ko_KR_TEXT_CROP_AGE_LEFT": "7남은 나이: "
 }
