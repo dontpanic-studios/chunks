@@ -28,6 +28,7 @@ public class ChunksConfiguratorSubCommand implements TabCompleter {
             set.add("config");
             set.add("reset");
             set.add("save");
+            set.add("coin");
 
             return set;
         } else if(args.length == 3) {

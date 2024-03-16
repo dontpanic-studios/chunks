@@ -1,4 +1,4 @@
-package std.standard.chunks.events;
+package std.standard.chunks.events.player;
 
 import com.google.common.base.Enums;
 import org.bukkit.ChatColor;

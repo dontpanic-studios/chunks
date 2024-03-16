@@ -8,7 +8,9 @@ import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 import std.standard.chunks.command.ChunkConfigurator;
 import std.standard.chunks.command.ChunksConfiguratorSubCommand;
-import std.standard.chunks.events.*;
+import std.standard.chunks.events.chunk.*;
+import std.standard.chunks.events.player.BuyChunkRightClick;
+import std.standard.chunks.events.player.PlayerShiftShowCropTime;
 
 import java.io.File;
 import java.io.IOException;
@@ -38,7 +40,11 @@ public final class Chunks extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new PistonHeadMove(), this);
         getServer().getPluginManager().registerEvents(new InteractionChest(), this);
         getServer().getPluginManager().registerEvents(new InteractionPlants(), this);
-        getServer().getPluginManager().registerEvents(new PlayerShiftShowCropTime(), this);
+        getServer().getPluginManager().registerEvents(new InteractionAll(), this);
+        //getServer().getPluginManager().registerEvents(new PlayerShiftShowCropTime(), this);
+        //getServer().getPluginManager().registerEvents(new BuyChunkRightClick(), this);
+        //getServer().getPluginManager().registerEvents(new CheckOwnedChunk(), this);
+        //getServer().getPluginManager().registerEvents(new CheckChunkChange(), this);
     }
 
     @Override
