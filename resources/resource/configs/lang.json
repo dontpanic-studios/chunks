@@ -23,6 +23,9 @@
   "en_US_TEXT_INVALID_COMMAND": "eInvalid Command.",
   "en_US_TEXT_CROP_FULL_GROWN": "eFull grown.",
   "en_US_TEXT_CROP_AGE_LEFT": "7Age left: ",
+  "en_US_TEXT_CHUNK_BOUGHT": "aChunk bought!",
+  "en_US_TEXT_CHUNK_OWNER": "7Chunk Owner: ",
+  "en_US_TEXT_ITEM_COIN": "eServer Coin",
   "ko_KR_TEXT_CHUNK_INVALID": "c현재 있는 청크는 알수없는 청크이거나, 고장난 청크입니다.",
   "ko_KR_TEXT_INVALID_COMMAND": "e존재하지 않는 명령어입니다.",
   "ko_KR_TEXT_CHUNK_SAVED": "a청크를 저장하였습니다.",
@@ -41,5 +44,8 @@
   "ko_KR_TEXT_CHUNK_SETTING_RESETED": "a청크가 초기화되었습니다!",
   "ko_KR_TEXT_CONFIRM_RESET": "eReset 다음에 confirm 을 쳐서 진행하세요.",
   "ko_KR_TEXT_CROP_FULL_GROWN": "e작물이 다 자람",
-  "ko_KR_TEXT_CROP_AGE_LEFT": "7남은 나이: "
+  "ko_KR_TEXT_CROP_AGE_LEFT": "7남은 나이: ",
+  "ko_KR_TEXT_CHUNK_BOUGHT": "a청크를 구입하였습니다!",
+  "ko_KR_TEXT_CHUNK_OWNER": "7청크 주인: ",
+  "ko_KR_TEXT_ITEM_COIN": "e서버 코인"
 }
