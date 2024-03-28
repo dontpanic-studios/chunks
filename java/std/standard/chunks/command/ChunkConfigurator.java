@@ -10,6 +10,7 @@ import org.jetbrains.annotations.NotNull;
 import std.standard.chunks.Chunks;
 import std.standard.chunks.enums.LanguageEnum;
 import std.standard.chunks.enums.Settings;
+import std.standard.chunks.inv.ChunkConfig;
 import std.standard.chunks.item.coin;
 import std.standard.chunks.language.Language;
 
@@ -18,7 +19,7 @@ public class ChunkConfigurator implements CommandExecutor {
     @Override
     public boolean onCommand(@NotNull CommandSender commandSender, @NotNull Command command, @NotNull String s, @NotNull String[] args) {
         Player p = (Player) commandSender;
-        if(p.isOp()) {
+        if (p.isOp()) {
             if (args[0].equalsIgnoreCase("save")) {
                 p.sendMessage(ChatColor.COLOR_CHAR + new Language().DeSeriallizer(LanguageEnum.TEXT_TRY_CHUNK_SAVE));
                 try {
@@ -53,15 +54,22 @@ public class ChunkConfigurator implements CommandExecutor {
                 } catch (Exception e) {
                     p.sendMessage(ChatColor.COLOR_CHAR + new Language().DeSeriallizer(LanguageEnum.TEXT_CONFIRM_RESET));
                 }
-            } else if(args[0].equalsIgnoreCase("coin")) {
+            } else if (args[0].equalsIgnoreCase("coin")) {
                 p.getInventory().addItem(new coin().getCoin());
-            }
-            else {
+            } else {
                 p.sendMessage(ChatColor.COLOR_CHAR + new Language().DeSeriallizer(LanguageEnum.TEXT_INVALID_COMMAND));
             }
             return true;
         } else {
             p.sendMessage(ChatColor.COLOR_CHAR + new Language().DeSeriallizer(LanguageEnum.TEXT_NO_PERMISSION));
+        }
+
+        if(args[0].equalsIgnoreCase("gui")) {
+            try {
+                p.openInventory(new ChunkConfig().chunkConfigGUI(p));
+            } catch (Exception e) {
+                p.sendMessage(ChatColor.COLOR_CHAR + new Language().DeSeriallizer(LanguageEnum.TEXT_FAILED_OPEN_GUI));
+            }
         }
 
         return true;
