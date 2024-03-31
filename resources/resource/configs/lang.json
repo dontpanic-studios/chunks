@@ -26,6 +26,8 @@
   "en_US_TEXT_CHUNK_BOUGHT": "aChunk bought!",
   "en_US_TEXT_CHUNK_OWNER": "7Chunk Owner: ",
   "en_US_TEXT_ITEM_COIN": "eServer Coin",
+  "en_US_TEXT_FAILED_OPEN_GUI": "cFailed to Open Chunk Setting GUI! Might be broken chunk.",
+  "en_US_TEXT_GUI_TITLE": "isthistruebtw",
   "ko_KR_TEXT_CHUNK_INVALID": "c현재 있는 청크는 알수없는 청크이거나, 고장난 청크입니다.",
   "ko_KR_TEXT_INVALID_COMMAND": "e존재하지 않는 명령어입니다.",
   "ko_KR_TEXT_CHUNK_SAVED": "a청크를 저장하였습니다.",
@@ -47,5 +49,7 @@
   "ko_KR_TEXT_CROP_AGE_LEFT": "7남은 나이: ",
   "ko_KR_TEXT_CHUNK_BOUGHT": "a청크를 구입하였습니다!",
   "ko_KR_TEXT_CHUNK_OWNER": "7청크 주인: ",
-  "ko_KR_TEXT_ITEM_COIN": "e서버 코인"
+  "ko_KR_TEXT_ITEM_COIN": "e서버 코인",
+  "ko_KR_TEXT_FAILED_OPEN_GUI": "c청크 설정 GUI를 여는데 실패하였습니다! 청크가 고장났을수도 있습니다.",
+  "ko_KR_TEXT_GUI_TITLE": "7청크 설정"
 }

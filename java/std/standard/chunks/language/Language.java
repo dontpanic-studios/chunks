@@ -1,5 +1,6 @@
 package std.standard.chunks.language;
 
+import org.bukkit.ChatColor;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -24,12 +25,12 @@ public class Language {
 
             if(curLang != null) {
                 raw = korToUni(object.get(curLang + "_" + whatToChoose).toString());
-                rtn = uniToKor(raw);
+                rtn = ChatColor.COLOR_CHAR + uniToKor(raw);
             } else {
-                rtn = "Invalid Language";
+                rtn = ChatColor.RED + "Invalid language format.";
             }
         } catch (IOException e) {
-            rtn = "Failed to read language json file.";
+            rtn = ChatColor.RED + "Failed to read language file, is read file permission is not enabled?";
         } catch (ParseException e) {
             rtn = e.getLocalizedMessage();
         }
