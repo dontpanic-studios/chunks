@@ -27,7 +27,7 @@
   "en_US_TEXT_CHUNK_OWNER": "7Chunk Owner: ",
   "en_US_TEXT_ITEM_COIN": "eServer Coin",
   "en_US_TEXT_FAILED_OPEN_GUI": "cFailed to Open Chunk Setting GUI! Might be broken chunk.",
-  "en_US_TEXT_GUI_TITLE": "",
+  "en_US_TEXT_GUI_TITLE": "isthistruebtw",
   "ko_KR_TEXT_CHUNK_INVALID": "c현재 있는 청크는 알수없는 청크이거나, 고장난 청크입니다.",
   "ko_KR_TEXT_INVALID_COMMAND": "e존재하지 않는 명령어입니다.",
   "ko_KR_TEXT_CHUNK_SAVED": "a청크를 저장하였습니다.",

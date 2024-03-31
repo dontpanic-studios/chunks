@@ -30,6 +30,7 @@ public class ChunksConfiguratorSubCommand implements TabCompleter {
             set.add("save");
             set.add("coin");
             set.add("gui");
+            set.add("dbg");
 
             return set;
         } else if(args.length == 3) {
